@@ -48,6 +48,7 @@ const promptUser = () => {
         console.log(this.employee.getName());
         console.log(this.employee.getID());
         console.log(this.employee.getEmail());
+        console.table(this.employee.getRole());
     })
 }
 
