@@ -22,13 +22,12 @@ function areWeDone() {
     inquirer
         .prompt(Questions.areWeDoneQuestions)
         .then(function (answers){
-            console.log(answers)
-            if(answers = 'Add intern to roster.'){
-                console.log("Add intern")
-            } else if (answers = 'Add engineer to roster.') {
-                console.log("Add engineer")
+            if(answers.finishedQ == 'Add intern to roster.'){
+                console.log(answers.finishedQ)
+            } else if (answers.finishedQ == 'Add engineer to roster.') {
+                console.log(answers.finishedQ)
             } else{
-                console.log("Finished")
+                console.log(answers.finishedQ)
             }
         })
 }
