@@ -77,8 +77,6 @@ function createPage(teamInfo) {
 }
 
 function copyStyle() {
-    console.log(teamInfo);
-
     fs.copyFile('./src/style-template.css', './dist/style.css', err => {
         if (err) {
             return err
