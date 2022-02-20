@@ -7,9 +7,9 @@ test('test create employee object', () => {
 });
 
 test('test get engineer Github', () => {
-    const expectedGithub = "jo-gitty"
-    const engineer = new Engineer(expectedGithub);
+    const expectedGithub = 'GitHubUser';
+    const engineer = new Engineer('Dave', '3211', 'test@test.com', expectedGithub);
 
-    var actualGithub = engineer.getGithub()
-    expect(actualGithub).toEqual(expectedGithub)
+    var actualGithub = engineer.getGithub();
+    expect(actualGithub).toEqual(expectedGithub);
 });
