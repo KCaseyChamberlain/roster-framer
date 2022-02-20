@@ -1,12 +1,14 @@
 const cardsHTML = [];
 
 const generatePage = teamInfo => {
+         // create the html for engineers
     const generateManager = manager => {
         return `
         <div class="card employee-card">
             <div class="title">
             </div>
             <div class="name">
+            ${manager.getName()}
             </div>
             <div class="employee-id">
             </div>
@@ -18,6 +20,7 @@ const generatePage = teamInfo => {
         `;
     };
 
+     // create the html for engineers
     const generateEngineer = engineer => {
         return `
         <div class="card employee-card">
@@ -64,17 +67,13 @@ const generatePage = teamInfo => {
         .filter(employee => employee.getRole() === "Intern")
         .map(intern => generateIntern(intern))
     );
+    return cardsHTML.join(''),
+    console.log(cardsHTML)
+    // cardsHTML.flat()
+    // console.log(cardsHTML.flat());
 }
 
 module.exports = generatePage
 
-// function generatePage(teamInfo) {
-//     return `
-//     Manager's Info:
+
 //     ${teamInfo[0].name} 
-//     ${teamInfo[0].id} 
-//     ${teamInfo[0].email} 
-//     ${teamInfo[0].title} 
-//     ${teamInfo[0].tmOfficeNumber}
-//     `
-// }
