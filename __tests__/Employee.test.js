@@ -10,8 +10,8 @@ test('test create employee object', () => {
   });
 
 test('test get employee name', () => {
-  const expectedName = "casey"
-  const employee = new Employee(expectedName);
+  const expectedName = "john"
+  const employee = new Employee('john', '2246', 'test@email.com');
 
   var actualName = employee.getName()
   expect(actualName).toEqual(expectedName)
