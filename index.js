@@ -8,7 +8,7 @@ teamInfo = []
 const generatePage = require('./src/page-template.js');
 const fs = require('fs');
 
-
+// asks manager questions and saves answers
 function addManager() {
     inquirer
         .prompt(Questions.managerQuestions)
@@ -21,6 +21,7 @@ function addManager() {
         })
 }
 
+// calls a function based on the user's choice for areWeDoneQuestions
 function areWeDone() {
     inquirer
         .prompt(Questions.areWeDoneQuestions)
@@ -39,6 +40,7 @@ function areWeDone() {
         })
 }
 
+// asks intern questions and saves answers
 function addIntern() {
     inquirer
         .prompt(Questions.internQuestions)
@@ -51,6 +53,7 @@ function addIntern() {
         })
 }
 
+// asks engineer questions and saves answers
 function addEngineer() {
     inquirer
         .prompt(Questions.engineerQuestions)
@@ -63,8 +66,10 @@ function addEngineer() {
         })
 }
 
+// starts application
 addManager()
 
+// creates index.html
 function createPage(teamInfo) {
     console.log(teamInfo);
     var page = generatePage(teamInfo);
@@ -76,6 +81,7 @@ function createPage(teamInfo) {
     })
 }
 
+// copies style.css template
 function copyStyle() {
     fs.copyFile('./src/style-template.css', './dist/style.css', err => {
         if (err) {

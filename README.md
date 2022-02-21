@@ -1,7 +1,7 @@
 ## Roster Framer
 
 ### Description
-This project dynamically creates team roster inside a HTML file based on the user's inputs through the command line.
+This project dynamically creates a HTML file and a team roster inside that HTML file based on the user's inputs through the command line.
 
 ### License
 ![Github licence](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -9,7 +9,7 @@ This project dynamically creates team roster inside a HTML file based on the use
 This application is licensed under MIT
 
 ### Application Demo
-[Roster Framer Video Demo](https://drive.google.com/file/d/1ppm_xv7E5DCvHvKM5-TyaFp6Isdl75RE/view?usp=sharing)
+[Roster Framer Video Demo]()
 
 ### Table of Contents
 - [Description](#description)

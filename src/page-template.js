@@ -76,6 +76,7 @@ const generatePage = teamInfo => {
         </div>
         `;
     };
+    // pushes employee roles into their own array inside cardsHTML
     cardsHTML.push(teamInfo
         .filter(employee => employee.getRole() === "Manager")
         .map(manager => generateManager(manager)).join('')

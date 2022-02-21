@@ -17,6 +17,7 @@ header{
 .name{
     color: #404040;
     font-size: small;
+    padding-left: 3px;
 }
 
 .employee-card{
@@ -35,4 +36,3 @@ a{
 .office-number{
     font-size: x-small;
 }
-
