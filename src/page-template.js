@@ -30,14 +30,19 @@ const generatePage = teamInfo => {
         return `
         <div class="card employee-card">
             <div class="title">
+            ${intern.getRole()}
             </div>
             <div class="name">
+            ${intern.getName()}
             </div>
             <div class="employee-id">
+            ${intern.getID()}
             </div>
             <div class="email-address">
+            ${intern.getEmail()}
             </div>
             <div class="school">
+            ${intern.getSchool()}
             </div>
         </div>
         `;
@@ -48,14 +53,19 @@ const generatePage = teamInfo => {
         return `
         <div class="card employee-card">
             <div class="title">
+            ${engineer.getRole()}
             </div>
             <div class="name">
+            ${engineer.getName()}
             </div>
             <div class="employee-id">
+            ${engineer.getID()}
             </div>
             <div class="email-address">
+            ${engineer.getEmail()}
             </div>
             <div class="github-username">
+            ${engineer.getGithub()}
             </div>
         </div>
         `;
@@ -72,13 +82,10 @@ const generatePage = teamInfo => {
         .filter(employee => employee.getRole() === "Engineer")
         .map(engineer => generateEngineer(engineer))
     );
+    cardsHTML.join('')
     console.log(cardsHTML)
     var HTML = generateTemplate(cardsHTML)
     return HTML
 }
 
 module.exports = generatePage
-
-
-//     ${teamInfo[0].name} 
-// ${manager.getName()}
