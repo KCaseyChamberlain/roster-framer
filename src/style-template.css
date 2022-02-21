@@ -1,3 +1,18 @@
-body{
-    background-color: aquamarine;
+header{
+    background-color: #3489eb;
+    text-align: center;
+}
+
+.card-head{
+    background-color: #eb3452;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.name{
+    color: #404040;
 }

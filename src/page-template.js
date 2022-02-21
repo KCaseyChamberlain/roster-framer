@@ -5,18 +5,20 @@ const generatePage = teamInfo => {
          // create the html for engineers
     const generateManager = manager => {
         return `
-        <div class="card employee-card">
-            <div class="title">
-            ${manager.getRole()}
-            </div>
-            <div class="name">
-            ${manager.getName()}
+        <div class="card employee-card col-4 mr-auto">
+        <div class="card-head">
+                <div class="title">
+                ${manager.getRole()}
+                </div>
+                <div class="name">
+                ${manager.getName()}
+                </div>
             </div>
             <div class="employee-id">
             ${manager.getID()}
             </div>
             <div class="email-address">
-            ${manager.getEmail()}
+            <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a>
             </div>
             <div class="office-number">
             ${manager.getOfficeNumber()}
@@ -28,18 +30,20 @@ const generatePage = teamInfo => {
     // create the html for interns
     const generateIntern = intern => {
         return `
-        <div class="card employee-card">
-            <div class="title">
-            ${intern.getRole()}
-            </div>
-            <div class="name">
-            ${intern.getName()}
+        <div class="card employee-card col-4 mr-auto">
+        <div class="card-head">
+                <div class="title">
+                ${intern.getRole()}
+                </div>
+                <div class="name">
+                ${intern.getName()}
+                </div>
             </div>
             <div class="employee-id">
             ${intern.getID()}
             </div>
             <div class="email-address">
-            ${intern.getEmail()}
+            <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a>
             </div>
             <div class="school">
             ${intern.getSchool()}
@@ -51,18 +55,20 @@ const generatePage = teamInfo => {
      // create the html for engineers
     const generateEngineer = engineer => {
         return `
-        <div class="card employee-card">
-            <div class="title">
-            ${engineer.getRole()}
-            </div>
-            <div class="name">
-            ${engineer.getName()}
+        <div class="card employee-card col-4 mr-auto">
+        <div class="card-head">
+                <div class="title">
+                ${engineer.getRole()}
+                </div>
+                <div class="name">
+                ${engineer.getName()}
+                </div>
             </div>
             <div class="employee-id">
             ${engineer.getID()}
             </div>
             <div class="email-address">
-            ${engineer.getEmail()}
+            <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a>
             </div>
             <div class="github-username">
             ${engineer.getGithub()}
