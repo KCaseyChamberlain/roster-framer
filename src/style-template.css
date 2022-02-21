@@ -12,18 +12,27 @@ header{
 .title{
     text-align: center;
     font-weight: bold;
-    font-size: large;
 }
 
 .name{
     color: #404040;
+    font-size: small;
 }
 
 .employee-card{
     box-shadow: 2px 2px;
-    margin: 10px
+    margin: 7px
 }
 
 a{
     color: #eb3452;
 }
+
+.github-username,
+.email-address,
+.employee-id,
+.school,
+.office-number{
+    font-size: x-small;
+}
+

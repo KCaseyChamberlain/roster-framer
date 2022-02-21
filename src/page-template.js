@@ -5,7 +5,7 @@ const generatePage = teamInfo => {
          // create the html for engineers
     const generateManager = manager => {
         return `
-        <div class="card employee-card col-4 mr-auto">
+        <div class="card employee-card col-3 mr-auto">
         <div class="card-head">
                 <div class="title">
                 ${manager.getRole()}
@@ -30,7 +30,7 @@ const generatePage = teamInfo => {
     // create the html for interns
     const generateIntern = intern => {
         return `
-        <div class="card employee-card col-4 mr-auto">
+        <div class="card employee-card col-3 mr-auto">
         <div class="card-head">
                 <div class="title">
                 ${intern.getRole()}
@@ -55,7 +55,7 @@ const generatePage = teamInfo => {
      // create the html for engineers
     const generateEngineer = engineer => {
         return `
-        <div class="card employee-card col-4 mr-auto">
+        <div class="card employee-card col-3 mr-auto">
         <div class="card-head">
                 <div class="title">
                 ${engineer.getRole()}
@@ -77,7 +77,7 @@ const generatePage = teamInfo => {
         `;
     };
     cardsHTML.push(teamInfo
-        .filter(employee => employee.getRole() === "Team Manager")
+        .filter(employee => employee.getRole() === "Manager")
         .map(manager => generateManager(manager)).join('')
     );
     cardsHTML.push(teamInfo
@@ -88,7 +88,7 @@ const generatePage = teamInfo => {
         .filter(employee => employee.getRole() === "Engineer")
         .map(engineer => generateEngineer(engineer)).join('')
     );
-    console.log(cardsHTML)
+    // console.log(cardsHTML)
     var HTML = generateTemplate(cardsHTML.join(''))
     return HTML
 }
