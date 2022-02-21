@@ -72,19 +72,18 @@ const generatePage = teamInfo => {
     };
     cardsHTML.push(teamInfo
         .filter(employee => employee.getRole() === "Team Manager")
-        .map(manager => generateManager(manager))
+        .map(manager => generateManager(manager)).join('')
     );
     cardsHTML.push(teamInfo
         .filter(employee => employee.getRole() === "Intern")
-        .map(intern => generateIntern(intern))
+        .map(intern => generateIntern(intern)).join('')
     )
     cardsHTML.push(teamInfo
         .filter(employee => employee.getRole() === "Engineer")
-        .map(engineer => generateEngineer(engineer))
+        .map(engineer => generateEngineer(engineer)).join('')
     );
-    cardsHTML.join('')
     console.log(cardsHTML)
-    var HTML = generateTemplate(cardsHTML)
+    var HTML = generateTemplate(cardsHTML.join(''))
     return HTML
 }
 
