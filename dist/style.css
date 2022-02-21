@@ -1,0 +1,38 @@
+header{
+    background-color: #3c7aa3;
+    text-align: center;
+    border-bottom: solid;
+    text-shadow: 1px 1px;
+}
+
+.card-head{
+    background-color: #eb3452;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.name{
+    color: #404040;
+    font-size: small;
+    padding-left: 3px;
+}
+
+.employee-card{
+    box-shadow: 2px 2px;
+    margin: 7px
+}
+
+a{
+    color: #eb3452;
+}
+
+.github-username,
+.email-address,
+.employee-id,
+.school,
+.office-number{
+    font-size: x-small;
+}
