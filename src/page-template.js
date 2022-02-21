@@ -15,13 +15,13 @@ const generatePage = teamInfo => {
                 </div>
             </div>
             <div class="employee-id">
-            ${manager.getID()}
+            ID: ${manager.getID()}
             </div>
             <div class="email-address">
             <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a>
             </div>
             <div class="office-number">
-            ${manager.getOfficeNumber()}
+            Office: ${manager.getOfficeNumber()}
             </div>
         </div>
         `;
@@ -40,13 +40,13 @@ const generatePage = teamInfo => {
                 </div>
             </div>
             <div class="employee-id">
-            ${intern.getID()}
+            ID: ${intern.getID()}
             </div>
             <div class="email-address">
             <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a>
             </div>
             <div class="school">
-            ${intern.getSchool()}
+            School: ${intern.getSchool()}
             </div>
         </div>
         `;
@@ -65,13 +65,13 @@ const generatePage = teamInfo => {
                 </div>
             </div>
             <div class="employee-id">
-            ${engineer.getID()}
+            ID: ${engineer.getID()}
             </div>
             <div class="email-address">
             <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a>
             </div>
             <div class="github-username">
-            ${engineer.getGithub()}
+            <a href="https://github.com/${engineer.getGithub()}?tab=repositories">GitHub</a>
             </div>
         </div>
         `;

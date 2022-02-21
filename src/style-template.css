@@ -1,6 +1,8 @@
 header{
-    background-color: #3489eb;
+    background-color: #3c7aa3;
     text-align: center;
+    border-bottom: solid;
+    text-shadow: 1px 1px;
 }
 
 .card-head{
@@ -15,4 +17,13 @@ header{
 
 .name{
     color: #404040;
+}
+
+.employee-card{
+    box-shadow: 2px 2px;
+    margin: 10px
+}
+
+a{
+    color: #eb3452;
 }
